@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="fischer 外牆石材背擴孔與錨固系統案例與技術介紹" />
+  <title>fischer 外牆系統｜專業石材背擴孔與錨固方案</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --red:#e30613;
+      --red-dark:#b9000b;
+      --ink:#161616;
+      --muted:#666;
+      --line:#e7e7e7;
+      --paper:#fff;
+      --soft:#f6f6f6;
+      --dark:#1d1f21;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Noto Sans TC",system-ui,-apple-system,sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.65;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topbar{
+      position:sticky;top:0;z-index:50;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:28px;letter-spacing:-1px}
+    .brand-mark{
+      width:44px;height:44px;border-radius:50%;
+      background:var(--red);color:#fff;display:grid;place-items:center;
+      font-weight:900;font-size:24px;
+      box-shadow:0 6px 20px rgba(227,6,19,.25);
+    }
+    .brand small{font-size:12px;color:#777;font-weight:600;letter-spacing:.8px;display:block;margin-top:-5px}
+    .menu{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
+    .menu a:hover{color:var(--red)}
+    .cta{background:var(--red);color:#fff!important;padding:11px 18px;border-radius:8px}
+    .hero{
+      min-height:650px;
+      display:flex;align-items:center;
+      position:relative;overflow:hidden;
+      background:
+        linear-gradient(90deg,rgba(12,12,12,.86) 0%,rgba(12,12,12,.65) 44%,rgba(12,12,12,.18) 100%),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=85") center/cover;
+      color:#fff;
+    }
+    .hero:after{
+      content:"";position:absolute;right:-140px;bottom:-160px;width:470px;height:470px;border:80px solid rgba(227,6,19,.65);border-radius:50%;
+    }
+    .hero-content{position:relative;z-index:2;max-width:760px;padding:90px 0}
+    .eyebrow{color:#ff3540;font-weight:800;letter-spacing:2.5px;font-size:14px;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.08;margin:16px 0 22px;letter-spacing:-2px}
+    .hero p{font-size:20px;color:#eee;max-width:680px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 22px;border-radius:8px;font-weight:700;border:1px solid transparent;
+      transition:.2s ease;
+    }
+    .btn-primary{background:var(--red);color:#fff}
+    .btn-primary:hover{background:var(--red-dark);transform:translateY(-2px)}
+    .btn-ghost{border-color:#fff;color:#fff}
+    .btn-ghost:hover{background:#fff;color:#111}
+    .stats{
+      margin-top:-42px;position:relative;z-index:5;
+      display:grid;grid-template-columns:repeat(4,1fr);
+      background:#fff;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.12);overflow:hidden
+    }
+    .stat{padding:26px;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:none}
+    .stat strong{display:block;font-size:28px;color:var(--red)}
+    .stat span{font-size:14px;color:#666}
+    section{padding:90px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+    .section-head h2{font-size:38px;line-height:1.2;margin:6px 0 0}
+    .section-head p{max-width:560px;color:var(--muted);margin:0}
+    .systems{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:.25s ease}
+    .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.09)}
+    .card-visual{height:220px;background:#eee;overflow:hidden}
+    .card-visual img{width:100%;height:100%;object-fit:cover}
+    .card-body{padding:24px}
+    .tag{display:inline-block;color:var(--red);font-weight:800;font-size:13px;margin-bottom:7px}
+    .card h3{margin:0 0 10px;font-size:23px}
+    .card p{color:var(--muted);margin:0}
+
+    .faz-thumb{margin-top:18px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}.faz-thumb img{width:100%;display:block}.faz-thumb-caption{padding:9px 12px;font-size:13px;color:#666}.faz-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .catalog-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .catalog-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:800;border:1px solid var(--red);color:var(--red);transition:.2s ease}
+    .catalog-link:hover{background:var(--red);color:#fff;transform:translateY(-1px)}
+    .catalog-link.primary{background:var(--red);color:#fff}
+    .catalog-link.primary:hover{background:var(--red-dark);border-color:var(--red-dark)}
+    .catalog-note{font-size:12px!important;color:#888!important;margin-top:8px!important}
+    .feature{background:var(--soft)}
+    .feature-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+    .feature-photo{border-radius:18px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.14)}
+    .feature-photo img{width:100%;height:520px;object-fit:cover}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+    .check{background:#fff;border-radius:10px;padding:18px;border-left:4px solid var(--red)}
+    .check strong{display:block;margin-bottom:4px}
+    .check span{font-size:14px;color:#666}
+    .projects{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-template-rows:260px 260px;gap:16px}
+    .project{position:relative;overflow:hidden;border-radius:14px;background:#ddd}
+    .project:first-child{grid-row:1/3}
+    .project img{width:100%;height:100%;object-fit:cover;transition:.5s}
+    .project:hover img{transform:scale(1.05)}
+    .project .overlay{position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.82));display:flex;align-items:flex-end;padding:22px;color:#fff}
+    .project strong{font-size:20px}
+    .project span{display:block;font-size:13px;color:#ddd}
+    .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .case-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.06);transition:.25s ease}
+    .case-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(0,0,0,.12)}
+    .case-card button{display:block;width:100%;padding:0;background:none;text-align:left;color:inherit}
+    .case-image{height:240px;background:#e9e9e9;overflow:hidden}
+    .case-image img{width:100%;height:100%;object-fit:cover;transition:.35s ease}
+    .case-card:hover .case-image img{transform:scale(1.025)}
+    .case-info{padding:18px 20px 20px}
+    .case-region{font-size:12px;font-weight:800;letter-spacing:1.4px;color:var(--red);margin-bottom:5px}
+    .case-info h3{font-size:20px;margin:0 0 6px}
+    .case-info p{font-size:14px;color:var(--muted);margin:0}
+    .case-more{display:flex;justify-content:center;margin-top:30px}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:28px}
+    .lightbox.open{display:flex}
+    .lightbox-inner{max-width:1240px;max-height:92vh;position:relative}
+    .lightbox img{max-width:100%;max-height:88vh;object-fit:contain;border-radius:8px;box-shadow:0 18px 70px rgba(0,0,0,.45)}
+    .lightbox-close{position:absolute;right:-12px;top:-12px;width:42px;height:42px;border-radius:50%;background:#fff;color:#111;font-size:26px;line-height:42px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+    .tech{
+      background:var(--dark);color:#fff
+    }
+    .tech .section-head p{color:#bbb}
+    .tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .tech-item{padding:24px;border:1px solid #3a3a3a;border-radius:12px;background:#242628}
+    .tech-item b{font-size:32px;color:#ff3d48;display:block;margin-bottom:6px}
+    .tech-item p{color:#bbb;font-size:14px;margin:0}
+    .contact{background:linear-gradient(135deg,#f7f7f7,#fff)}
+    .contact-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:44px;box-shadow:0 24px 60px rgba(0,0,0,.07)}
+    .contact h2{font-size:38px;margin:10px 0 14px}
+    .contact p{color:#666}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    input,textarea,select{
+      width:100%;padding:14px 15px;border:1px solid #d9d9d9;border-radius:8px;font:inherit;background:#fff
+    }
+    textarea{grid-column:1/-1;min-height:132px;resize:vertical}
+    .full{grid-column:1/-1}
+    button{cursor:pointer;font:inherit;border:none}
+    footer{background:#111;color:#cfcfcf;padding:34px 0}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:13px}
+    .footer-row b{color:#fff;font-size:20px}
+    @media(max-width:900px){
+      .menu a:not(.cta){display:none}
+      .stats{grid-template-columns:1fr 1fr}
+      .stat:nth-child(2){border-right:none}
+      .systems{grid-template-columns:1fr}
+      .feature-grid,.contact-box{grid-template-columns:1fr}
+      .tech-grid{grid-template-columns:1fr 1fr}
+      .projects{grid-template-columns:1fr;grid-template-rows:repeat(4,300px)}
+      .project:first-child{grid-row:auto}
+      .case-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(100% - 26px,var(--max))}
+      .hero{min-height:600px}
+      .stats{grid-template-columns:1fr}
+      .stat{border-right:0;border-bottom:1px solid var(--line)}
+      section{padding:68px 0}
+      .section-head{display:block}
+      .section-head h2{font-size:31px;margin-bottom:14px}
+      .checks,.tech-grid,form,.case-grid{grid-template-columns:1fr}
+      textarea,.full{grid-column:auto}
+      .contact-box{padding:26px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="brand-mark">f</div>
+        <div>fischer <small>FAÇADE SYSTEMS</small></div>
+      </div>
+      <nav class="menu">
+        <a href="#systems">系統方案</a>
+        <a href="#advantages">技術優勢</a>
+        <a href="#projects">工程案例</a>
+        <a href="#contact" class="cta">聯絡詢價</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-content">
+        <div class="eyebrow">German Engineering · Façade Technology</div>
+        <h1>讓每一片石材<br>都有可靠的結構依據</h1>
+        <p>以 fischer 背擴孔與專業錨固技術，提供建築外牆石材乾式安裝的安全、精準與高效率解決方案。</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#systems">查看系統方案</a>
+          <a class="btn btn-ghost" href="#projects">瀏覽工程案例</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap stats">
+      <div class="stat"><strong>FZP II</strong><span>石材背擴孔錨栓系統</span></div>
+      <div class="stat"><strong>A4</strong><span>高耐蝕不鏽鋼選項</span></div>
+      <div class="stat"><strong>EN / ETA</strong><span>國際技術評估與驗證概念</span></div>
+      <div class="stat"><strong>360°</strong><span>設計、供料、施工技術整合</span></div>
+    </div>
+
+    <section id="systems">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">SYSTEM SOLUTIONS</div>
+            <h2>外牆與錨固系統</h2>
+          </div>
+          <p>從石材背擴孔、磁磚背擴孔、混凝土錨固、預埋槽到萬能錨栓，依據不同工程與固定需求提供對應系統選擇。</p>
+        </div>
+        <div class="systems">
+          <article class="card">
+            <div class="card-visual"><img src="assets/images/faz-ii-project-france.png" alt="FAZ II 錨固系統工程案例－La Grande Arche de La Défense, France"></div>
+            <div class="card-body">
+              <span class="tag">STONE FAÇADE</span>
+              <h3>FZP II 背擴孔系統</h3>
+              <p>將固定點隱藏於石材背面，兼顧外觀、結構性能與施工精度，適用天然石材及外牆乾式系統。</p>
+              <div class="catalog-links">
+                <a class="catalog-link primary" href="assets/catalog/2026-FHC-fischer-catalog.pdf" target="_blank" rel="noopener">📖 查看產品型錄</a>
+                <a class="catalog-link" href="assets/catalog/2026-FHC-fischer-catalog.pdf" download>⬇ 下載 PDF</a>
+              </div>
+              <p class="catalog-note">2026 富華成 fischer 外牆與錨固系統綜合型錄</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-visual"><img src="assets/images/tile-undercut-project.png" alt="fischer 磁磚背擴孔系統建築案例"></div>
+            <div class="card-body">
+              <span class="tag">磁磚背擴孔系統</span>
+              <h3>fischer 磁磚背擴孔系統</h3>
+              <p>針對薄板磁磚、陶板及外牆面板固定需求，採背面擴孔錨固概念，兼顧隱藏式固定、施工精度與外牆整體美觀。</p>
+              <div class="catalog-links">
+                <a class="catalog-link" href="assets/catalog/fischer-FZP-II-T-D40-PA.pdf" target="_blank" rel="noopener">📕 查看磁磚背擴孔系統 PDF</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-visual"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="建築結構"></div>
+            <div class="card-body">
+              <span class="tag">MECHANICAL ANCHOR</span>
+              <h3>FAZ II 錨栓</h3>
+              <p>適合混凝土結構固定，提供高性能機械式錨固選項，可配合支架、鋁軌與外牆次結構應用。</p>
+              <div class="faz-links">
+                <a class="catalog-link primary" href="assets/catalog/Fischer-FAZ-II-10-10-K-R.pdf" target="_blank" rel="noopener">📕 FAZ II 10/10 K R 扭力控制型膨脹錨栓 PDF</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-visual"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" alt="施工現場"></div>
+            <div class="card-body">
+              <span class="tag">CAST-IN CHANNEL</span>
+              <h3>fischer 預埋槽系統</h3>
+              <p>InnoLock FES 專利創新鎖齒型預埋槽，適用於單元式帷幕牆等工程，採安全機械互鎖設計，提供穩定可靠的承載與施工性能。</p>
+              <div class="catalog-links">
+                <a class="catalog-link primary" href="assets/catalog/fischer-InnoLock-FES.pdf" target="_blank" rel="noopener">📕 InnoLock FES 預埋槽型錄</a>
+                <a class="catalog-link" href="assets/catalog/fischer-InnoLock-cases.pdf" target="_blank" rel="noopener">📘 fischer 預埋槽國內外案例</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-visual"><img src="assets/catalog/duopower-product.png" alt="fischer DuoPower 萬能錨栓與支架、管線固定應用"></div>
+            <div class="card-body">
+              <span class="tag">萬能錨栓系列</span>
+              <h3>fischer DuoPower 萬能錨栓</h3>
+              <p>適用多種常見建築基材的尼龍萬能錨栓系列，可作為室內裝修、設備與一般固定應用的產品大項。</p>
+              <div class="catalog-links">
+                <a class="catalog-link primary" href="assets/catalog/duopower2024.pdf" target="_blank" rel="noopener">📕 查看 DuoPower 產品目錄 PDF</a>
+                <a class="catalog-link" href="assets/catalog/Fischer-DUO-LINE.pdf" target="_blank" rel="noopener">📘 查看 Fischer DUO-LINE 簡報 PDF</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature" id="advantages">
+      <div class="wrap feature-grid">
+        <div class="feature-photo">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1300&q=85" alt="現代石材建築">
+        </div>
+        <div>
+          <div class="eyebrow">WHY FISCHER</div>
+          <h2 style="font-size:40px;line-height:1.2;margin:10px 0 18px;">從固定點開始<br>提升整體外牆品質</h2>
+          <p style="color:#666;">外牆安全不是單一零件，而是設計、材料、施工與檢驗的整合。背擴孔系統能將固定點隱藏於石材背面，並降低傳統開槽固定對石材邊緣的依賴。</p>
+          <div class="checks">
+            <div class="check"><strong>隱藏式固定</strong><span>外觀完整，正面不露固定件。</span></div>
+            <div class="check"><strong>精準定位</strong><span>利於模組化設計與現場調整。</span></div>
+            <div class="check"><strong>耐候考量</strong><span>可依環境選用適合材質與防蝕等級。</span></div>
+            <div class="check"><strong>工程整合</strong><span>配合鋁軌、支架及結構錨固系統。</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">PROJECT REFERENCES</div>
+            <h2>全台工程案例</h2>
+          </div>
+          <p>fischer 錨固與石材背擴孔系統應用遍及台北、台中、台南與高雄。點擊案例圖片可放大查看。</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/taipei-xinyi.jpg" alt="台北信義區 fischer 工程案例"></div><div class="case-info"><div class="case-region">TAIPEI · XINYI</div><h3>台北信義區案例</h3><p>信義區多項指標建築與商辦之 fischer 工程應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/daan-yongkang.jpg" alt="大安森林公園與永康商圈 fischer 案例"></div><div class="case-info"><div class="case-region">TAIPEI · DAAN</div><h3>大安森林公園・永康商圈</h3><p>大安區住宅與指標建案案例分布。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/heping-east-road.jpg" alt="和平東路周邊 fischer 指標建案"></div><div class="case-info"><div class="case-region">TAIPEI · HEPING EAST RD.</div><h3>和平東路周邊指標建案</h3><p>大安區和平東路周邊住宅案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/dunhua-road.jpg" alt="敦化南北路 fischer 案例"></div><div class="case-info"><div class="case-region">TAIPEI · DUNHUA</div><h3>敦化南北路周邊案例</h3><p>敦南、敦北商辦與住宅建築應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/shinkong-banqiao.jpg" alt="新光人壽板橋傑仕堡A基地"></div><div class="case-info"><div class="case-region">NEW TAIPEI · BANQIAO</div><h3>新光人壽板橋傑仕堡 A 基地</h3><p>FZP II 13×15 M8/19 A4 背擴孔錨栓應用案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/taichung-city-hall.png" alt="台中市政府周邊 fischer 案例"></div><div class="case-info"><div class="case-region">TAICHUNG · CITY HALL</div><h3>台中市政府周邊案例</h3><p>市政府、議會與七期周邊建築案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/taichung-opera.png" alt="台中國家歌劇院周邊 fischer 案例"></div><div class="case-info"><div class="case-region">TAICHUNG · OPERA HOUSE</div><h3>國家歌劇院周邊案例</h3><p>七期住宅與商辦多項代表性案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/taichung-phase7.jpg" alt="台中七期 fischer 案例"></div><div class="case-info"><div class="case-region">TAICHUNG · PHASE 7</div><h3>台中七期案例</h3><p>七期重劃區高端住宅與商辦案例總覽。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/world-pearl.jpg" alt="世界明珠 fischer 案例"></div><div class="case-info"><div class="case-region">TAIPEI · NANGANG</div><h3>世界明珠</h3><p>背擴孔錨栓 FZP II M8 工程應用案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/deyun.jpg" alt="德運建設 fischer 案例"></div><div class="case-info"><div class="case-region">TAIPEI</div><h3>德運建設案例</h3><p>德運永康、德運京鼎等住宅外牆工程。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/tainan-kaohsiung.jpg" alt="台南高雄 fischer 案例"></div><div class="case-info"><div class="case-region">TAINAN · KAOHSIUNG</div><h3>台南・高雄案例</h3><p>南台灣住宅、文化建築與商辦工程案例。</p></div></button></article>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="caseLightbox" onclick="closeCase(event)">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" type="button" aria-label="關閉" onclick="closeCase(event,true)">×</button>
+        <img id="caseLightboxImage" src="" alt="工程案例放大圖">
+      </div>
+    </div>
+
+    <section class="tech">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">ENGINEERING VALUE</div>
+            <h2>技術導向，而不只是材料供應</h2>
+          </div>
+          <p>可依專案需求整理錨固配置、材料規格、施工節點與相關技術資料，讓建築、結構與現場施工更容易溝通。</p>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item"><b>01</b><strong>系統選型</strong><p>依石材、基材、荷重與環境條件選擇適合的固定方案。</p></div>
+          <div class="tech-item"><b>02</b><strong>節點整合</strong><p>背栓、支架、鋁軌與主體結構錨固之整體配置。</p></div>
+          <div class="tech-item"><b>03</b><strong>技術文件</strong><p>協助彙整產品資料、安裝要求與工程送審所需資訊。</p></div>
+          <div class="tech-item"><b>04</b><strong>現場支援</strong><p>施工階段提供系統說明、安裝重點與問題協調。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-box">
+        <div>
+          <div class="eyebrow">CONTACT</div>
+          <h2>有外牆石材或錨固需求？</h2>
+          <p>留下建案資訊，我們可依石材尺寸、外牆系統、樓高與基材條件協助初步評估。</p>
+          <p><strong>富華成股份有限公司</strong><br>電話：(02)2773-5110　傳真：(02)2773-5339<br>fischer 外牆與錨固系統專業服務</p>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('此為網站展示版。正式上線後可串接 Email、LINE 或 CRM。');">
+          <input required placeholder="姓名 / 公司">
+          <input placeholder="聯絡電話">
+          <input type="email" placeholder="Email">
+          <select>
+            <option>請選擇需求類型</option>
+            <option>石材背擴孔系統</option>
+            <option>機械式錨栓</option>
+            <option>化學錨栓</option>
+            <option>工程技術諮詢</option>
+          </select>
+          <textarea placeholder="建案名稱、石材尺寸、樓高或其他需求"></textarea>
+          <button class="btn btn-primary full" type="submit">送出詢問</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><b>fischer façade systems</b><br>工程固定・外牆技術・專業整合</div>
+      <div>網站概念設計版｜產品名稱與商標權利歸原權利人所有</div>
+    </div>
+  </footer>
+  <script>
+    function openCase(button){
+      const img=button.querySelector('img');
+      document.getElementById('caseLightboxImage').src=img.src;
+      document.getElementById('caseLightboxImage').alt=img.alt;
+      document.getElementById('caseLightbox').classList.add('open');
+      document.body.style.overflow='hidden';
+    }
+    function closeCase(event,force=false){
+      if(force || event.target.id==='caseLightbox'){
+        document.getElementById('caseLightbox').classList.remove('open');
+        document.body.style.overflow='';
+      }
+    }
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('caseLightbox').classList.remove('open');document.body.style.overflow='';}});
+  </script>
+</body>
+</html>
