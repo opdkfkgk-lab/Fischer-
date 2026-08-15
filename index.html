@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="fischer 外牆石材背擴孔與錨固系統案例與技術介紹" />
-  <meta name="keywords" content="fischer, 外牆系統, 背孔鑽孔系統, 機械式錨栓, 石材乾式安裝, 建築工程" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="EFPKhAB3kxp8kvOaZJ--AXntgwG5-lNNaqPNJZSEmXc" />
-  <title>fischer 外牆系統｜專業石材背擴孔與錨固方案</title>
+  <meta name="description" content="富華成股份有限公司｜fischer 外牆石材背擴孔與錨固系統案例與技術介紹" />
+  <title>fischer 外牆系統｜富華成股份有限公司</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -42,16 +39,20 @@
       border-bottom:1px solid var(--line);
     }
     .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:28px;letter-spacing:-1px}
-    .brand-mark{
-      width:44px;height:44px;border-radius:50%;
-      background:var(--red);color:#fff;display:grid;place-items:center;
-      font-weight:900;font-size:24px;
-      box-shadow:0 6px 20px rgba(227,6,19,.25);
-    }
-    .brand small{font-size:12px;color:#777;font-weight:600;letter-spacing:.8px;display:block;margin-top:-5px}
+    .brand{display:flex;align-items:center;gap:16px;min-width:0}
+    .brand-logo{width:178px;flex:0 0 auto}
+    .brand-logo img{width:100%;height:auto}
+    .brand-company{padding-left:16px;border-left:1px solid #d7d7d7;line-height:1.35;white-space:nowrap}
+    .brand-company strong{display:block;font-size:18px;letter-spacing:1px}
+    .brand-company small{display:block;font-size:11px;color:#777;font-weight:600;letter-spacing:.5px;margin-top:3px}
     .menu{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
     .menu a:hover{color:var(--red)}
+    .menu-item{position:relative;padding:25px 0}
+    .menu-trigger:after{content:"▾";font-size:10px;margin-left:6px;color:#888}
+    .submenu{position:absolute;left:50%;top:66px;transform:translateX(-50%);min-width:150px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 16px 38px rgba(0,0,0,.13);opacity:0;visibility:hidden;transition:.2s ease}
+    .submenu a{display:block;padding:10px 13px;border-radius:7px;white-space:nowrap}
+    .submenu a:hover{background:var(--soft)}
+    .menu-item:hover .submenu,.menu-item:focus-within .submenu{opacity:1;visibility:visible}
     .cta{background:var(--red);color:#fff!important;padding:11px 18px;border-radius:8px}
     .hero{
       min-height:650px;
@@ -89,6 +90,18 @@
     .stat strong{display:block;font-size:28px;color:var(--red)}
     .stat span{font-size:14px;color:#666}
     section{padding:90px 0}
+    .about{background:linear-gradient(135deg,#fff 0%,#f7f7f7 100%)}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}
+    .about-copy h2{font-size:38px;line-height:1.25;margin:8px 0 22px}
+    .about-copy p{color:var(--muted);margin:0 0 18px}
+    .values{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+    .values span{padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:800;color:var(--red)}
+    .business-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;box-shadow:0 18px 48px rgba(0,0,0,.07)}
+    .business-card h3{font-size:25px;margin:0 0 20px}
+    .business-list{display:grid;gap:14px}
+    .business-item{padding:15px 17px;border-left:4px solid var(--red);background:var(--soft);border-radius:8px}
+    .business-item strong{display:block;margin-bottom:3px}
+    .business-item span{display:block;color:#666;font-size:14px}
     .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
     .section-head h2{font-size:38px;line-height:1.2;margin:6px 0 0}
     .section-head p{max-width:560px;color:var(--muted);margin:0}
@@ -154,6 +167,7 @@
     .contact-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:44px;box-shadow:0 24px 60px rgba(0,0,0,.07)}
     .contact h2{font-size:38px;margin:10px 0 14px}
     .contact p{color:#666}
+    .agency-label{display:inline-block;color:var(--red);font-weight:900;font-size:18px;letter-spacing:.6px;margin-bottom:4px}
     form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     input,textarea,select{
       width:100%;padding:14px 15px;border:1px solid #d9d9d9;border-radius:8px;font:inherit;background:#fff
@@ -165,17 +179,27 @@
     .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:13px}
     .footer-row b{color:#fff;font-size:20px}
     @media(max-width:900px){
+      .brand{gap:10px}
+      .brand-logo{width:145px}
+      .brand-company{padding-left:10px}
+      .brand-company strong{font-size:15px}
+      .brand-company small{display:none}
       .menu a:not(.cta){display:none}
+      .menu-item{display:none}
       .stats{grid-template-columns:1fr 1fr}
       .stat:nth-child(2){border-right:none}
       .systems{grid-template-columns:1fr}
-      .feature-grid,.contact-box{grid-template-columns:1fr}
+      .feature-grid,.contact-box,.about-grid{grid-template-columns:1fr}
       .tech-grid{grid-template-columns:1fr 1fr}
       .projects{grid-template-columns:1fr;grid-template-rows:repeat(4,300px)}
       .project:first-child{grid-row:auto}
       .case-grid{grid-template-columns:1fr 1fr}
     }
     @media(max-width:560px){
+      .nav{height:68px;gap:10px}
+      .brand-logo{width:118px}
+      .brand-company{display:none}
+      .cta{padding:9px 12px;font-size:13px}
       .wrap{width:min(100% - 26px,var(--max))}
       .hero{min-height:600px}
       .stats{grid-template-columns:1fr}
@@ -193,16 +217,19 @@
   <header class="topbar">
     <div class="wrap nav">
       <div class="brand">
-        <div class="brand-mark">f</div>
-        <div>fischer <small>FAÇADE SYSTEMS</small></div>
+        <a class="brand-logo" href="#" aria-label="fischer 首頁"><img src="assets/images/fischer-logo-header.png" alt="fischer innovative solutions"></a>
+        <div class="brand-company"><strong>富華成股份有限公司</strong><small>FU HAU ENGINEERING CORP.</small></div>
       </div>
       <nav class="menu">
+        <div class="menu-item">
+          <a class="menu-trigger" href="#about" aria-haspopup="true">關於我們</a>
+          <div class="submenu"><a href="#about">公司簡介</a></div>
+        </div>
         <a href="#systems">系統方案</a>
         <a href="#advantages">技術優勢</a>
         <a href="#projects">工程案例</a>
         <a href="#contact" class="cta">聯絡詢價</a>
       </nav>
-    </div>
   </header>
 
   <main>
@@ -225,6 +252,30 @@
       <div class="stat"><strong>360°</strong><span>設計、供料、施工技術整合</span></div>
     </div>
 
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <div class="eyebrow">ABOUT FU HAU</div>
+          <h2>富華成股份有限公司<br>公司簡介</h2>
+          <p>富華成股份有限公司深耕建築材料領域多年，專注於高品質建材代理、工程配套整合與專業技術服務，致力提供建築外牆、石材乾掛、錨固系統及相關五金配件之完整解決方案。</p>
+          <p>本公司秉持誠信、品質、效率、服務的經營理念，長期服務建設公司、營造廠、建築師事務所、石材工程公司及各類公共工程單位，累積豐富實績與良好口碑。</p>
+          <div class="values"><span>誠信</span><span>品質</span><span>效率</span><span>服務</span></div>
+        </div>
+        <div class="business-card">
+          <h3>主要營業項目</h3>
+          <div class="business-list">
+            <div class="business-item"><strong>德國 fischer 專用錨固系統</strong><span>天然石材、人造石、異型角材、磁磚、陶板、玉晶石乾掛系統</span></div>
+            <div class="business-item"><strong>背擴孔錨栓</strong><span>FZP 背擴孔錨栓</span></div>
+            <div class="business-item"><strong>異型專用擴孔錨栓</strong><span>FZA、FZEA</span></div>
+            <div class="business-item"><strong>fischer 預埋槽</strong><span>FES、FBC</span></div>
+            <div class="business-item"><strong>金屬錨栓</strong><span>FAZ II 扭力控制型膨脹錨栓、FBS 底切式螺紋錨栓、FH 高性能錨栓</span></div>
+            <div class="business-item"><strong>DuoPower 尼龍錨栓</strong><span>多功能基材固定應用</span></div>
+            <div class="business-item"><strong>專用衛浴錨栓</strong><span>WST、WD 懸掛陶瓷衛浴錨栓</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="systems">
       <div class="wrap">
         <div class="section-head">
@@ -244,6 +295,7 @@
               <div class="catalog-links">
                 <a class="catalog-link primary" href="assets/catalog/2026-FHC-fischer-catalog.pdf" target="_blank" rel="noopener">📖 查看產品型錄</a>
                 <a class="catalog-link" href="assets/catalog/2026-FHC-fischer-catalog.pdf" download>⬇ 下載 PDF</a>
+                <a class="catalog-link" href="assets/catalog/Facades-Catalogue-2025-01.pdf" target="_blank" rel="noopener">📕 fischer Facades 2025-01 外牆系統型錄 PDF</a>
               </div>
               <p class="catalog-note">2026 富華成 fischer 外牆與錨固系統綜合型錄</p>
             </div>
@@ -267,6 +319,9 @@
               <p>適合混凝土結構固定，提供高性能機械式錨固選項，可配合支架、鋁軌與外牆次結構應用。</p>
               <div class="faz-links">
                 <a class="catalog-link primary" href="assets/catalog/Fischer-FAZ-II-10-10-K-R.pdf" target="_blank" rel="noopener">📕 FAZ II 10/10 K R 扭力控制型膨脹錨栓 PDF</a>
+                <a class="catalog-link" href="assets/catalog/FAZ-II-English.pdf" target="_blank" rel="noopener">📘 FAZ II 扭力控制型膨脹錨栓英文型錄 PDF</a>
+                <a class="catalog-link" href="assets/catalog/FAZ-Plus-II-Catalogue.pdf" target="_blank" rel="noopener">📗 FAZ Plus II 英文型錄 PDF</a>
+                <a class="catalog-link" href="assets/catalog/Catalogue-Fixing-Systems-2024-12.pdf" target="_blank" rel="noopener">📙 fischer Fixing Systems 2024-12 完整型錄 PDF</a>
               </div>
             </div>
           </article>
@@ -324,9 +379,29 @@
             <div class="eyebrow">PROJECT REFERENCES</div>
             <h2>全台工程案例</h2>
           </div>
-          <p>fischer 錨固與石材背擴孔系統應用遍及台北、台中、台南與高雄。點擊案例圖片可放大查看。</p>
+          <p>fischer 錨固與石材背擴孔系統應用遍及宜蘭、新竹、苗栗、台北、台中、台南與高雄。點擊案例圖片可放大查看。</p>
         </div>
         <div class="case-grid">
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/northern-taipei-projects-1.jpg" alt="fischer 台北與新北背擴孔工程案例總覽"></div><div class="case-info"><div class="case-region">TAIPEI · NEW TAIPEI</div><h3>北區擴孔案例（一）</h3><p>台北市與新北市 fischer 背擴孔工程案例總覽。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/northern-taiwan-projects-2.jpg" alt="fischer 北區外縣市背擴孔工程案例總覽"></div><div class="case-info"><div class="case-region">NORTHERN TAIWAN</div><h3>北區擴孔案例（二）</h3><p>桃園、新竹、苗栗、宜蘭及中部地區案例分布。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/rich-development.jpg" alt="德國 fischer 力麒建設工程案例"></div><div class="case-info"><div class="case-region">RICH DEVELOPMENT</div><h3>力麒建設案例</h3><p>力麒麒御、力麒賦御及總部大樓等工程案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/friendly-seat-development.jpg" alt="德國 fischer 友座建設工程案例"></div><div class="case-info"><div class="case-region">FRIENDLY SEAT DEVELOPMENT</div><h3>友座建設案例</h3><p>友座臻璽、友座君碧及友座安森工程案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/puyong-development.png" alt="德國 fischer 璞永建設工程案例"></div><div class="case-info"><div class="case-region">PUYONG DEVELOPMENT</div><h3>璞永建設案例</h3><p>醇建築、至仁愛及敦仰之 fischer 工程應用案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/farglory-land.jpg" alt="德國 fischer 遠雄建設工程案例"></div><div class="case-info"><div class="case-region">FARGLORY LAND</div><h3>遠雄建設案例</h3><p>遠雄住宅、商辦、金融中心及台北大巨蛋案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/yuanta-development.png" alt="德國 fischer 元大建設工程案例"></div><div class="case-info"><div class="case-region">YUANTA DEVELOPMENT</div><h3>元大建設案例</h3><p>元大住宅、商辦、金融總部及商業建築工程案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/taiwan-kumagai-2.jpg" alt="德國 fischer 華熊營造工程案例第二頁"></div><div class="case-info"><div class="case-region">TAIWAN KUMAGAI</div><h3>華熊營造案例（二）</h3><p>住宅與指標建築之 fischer 錨固系統工程應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/true-home-development.jpg" alt="德國 fischer 璞真建設工程案例"></div><div class="case-info"><div class="case-region">TRUE HOME DEVELOPMENT</div><h3>璞真建設案例</h3><p>璞真系列與勤美建案之 fischer 工程應用案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/king-pong-development.jpg" alt="德國 fischer 金朋建設工程案例"></div><div class="case-info"><div class="case-region">KING PONG DEVELOPMENT</div><h3>金朋建設案例</h3><p>水木青華、大安琉御及武功清秀工程案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/huaku-development.jpg" alt="德國 fischer 華固建設工程案例"></div><div class="case-info"><div class="case-region">HUAKU DEVELOPMENT</div><h3>華固建設案例</h3><p>華固建設住宅、商辦與金融大樓之 fischer 工程應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/kajima-construction-1.jpg" alt="德國 fischer 中鹿營造工程案例第一頁"></div><div class="case-info"><div class="case-region">KAJIMA · CASES 01</div><h3>中鹿營造案例（一）</h3><p>商辦、住宅與世界明珠等建築之 fischer 工程案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/kajima-construction-2.jpg" alt="德國 fischer 中鹿營造工程案例第二頁"></div><div class="case-info"><div class="case-region">KAJIMA · CASES 02</div><h3>中鹿營造案例（二）</h3><p>住宅、總部大樓與複合建築之 fischer 工程案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/continental-development.png" alt="德國 fischer 大陸建設工程案例"></div><div class="case-info"><div class="case-region">CONTINENTAL DEVELOPMENT</div><h3>大陸建設案例</h3><p>大陸建設住宅、飯店與商業建築之 fischer 工程應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/cheng-loong-construction.jpg" alt="德國 fischer 正隆建設背栓石材外牆吊掛案例"></div><div class="case-info"><div class="case-region">CHENG LOONG</div><h3>正隆建設案例</h3><p>正隆天第、正隆富饒及正隆官邸背栓石材外牆案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/dunhua-road-map.jpg" alt="德國 fischer 台北敦化南北路周邊工程案例分布"></div><div class="case-info"><div class="case-region">TAIPEI · DUNHUA</div><h3>敦化南北路周邊案例分布</h3><p>航廈大樓、金融中心及敦化北路周邊指標案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/dekton-undercut.jpg" alt="帝通石搭配 fischer 背擴孔系統外牆案例"></div><div class="case-info"><div class="case-region">DEKTON · FISCHER</div><h3>帝通石背擴孔案例</h3><p>帝通石外牆搭配 fischer 背擴孔系統之精選案例。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/yilan-region.jpg" alt="德國 fischer 宜蘭地區周邊背擴孔錨栓案例"></div><div class="case-info"><div class="case-region">YILAN</div><h3>宜蘭地區周邊案例</h3><p>宜蘭住宅、飯店與文化建築之背擴孔錨栓應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/hsinchu-miaoli.jpg" alt="德國 fischer 新竹與苗栗工程案例"></div><div class="case-info"><div class="case-region">HSINCHU · MIAOLI</div><h3>新竹・苗栗案例</h3><p>新竹與苗栗地區住宅建築之 fischer 工程應用。</p></div></button></article>
+          <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/twin-tower-high-rise.jpg" alt="德國 fischer 雙塔式超高層建築案例"></div><div class="case-info"><div class="case-region">TAIWAN · HIGH-RISE</div><h3>雙塔式超高層建築案例</h3><p>34 至 42 層雙塔式高層建築之 fischer 錨固應用。</p></div></button></article>
           <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/taipei-xinyi.jpg" alt="台北信義區 fischer 工程案例"></div><div class="case-info"><div class="case-region">TAIPEI · XINYI</div><h3>台北信義區案例</h3><p>信義區多項指標建築與商辦之 fischer 工程應用。</p></div></button></article>
           <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/daan-yongkang.jpg" alt="大安森林公園與永康商圈 fischer 案例"></div><div class="case-info"><div class="case-region">TAIPEI · DAAN</div><h3>大安森林公園・永康商圈</h3><p>大安區住宅與指標建案案例分布。</p></div></button></article>
           <article class="case-card"><button type="button" onclick="openCase(this)"><div class="case-image"><img src="assets/cases/heping-east-road.jpg" alt="和平東路周邊 fischer 指標建案"></div><div class="case-info"><div class="case-region">TAIPEI · HEPING EAST RD.</div><h3>和平東路周邊指標建案</h3><p>大安區和平東路周邊住宅案例。</p></div></button></article>
@@ -373,7 +448,7 @@
           <div class="eyebrow">CONTACT</div>
           <h2>有外牆石材或錨固需求？</h2>
           <p>留下建案資訊，我們可依石材尺寸、外牆系統、樓高與基材條件協助初步評估。</p>
-          <p><strong>富華成股份有限公司</strong><br>電話：(02)2773-5110　傳真：(02)2773-5339<br>fischer 外牆與錨固系統專業服務</p>
+          <p><span class="agency-label">fischer 外牆總代理</span><br><strong>富華成股份有限公司</strong><br>電話：(02)2773-5110<br>傳真：(02)2773-5339<br>地址：10685 台北市大安路一段84巷7號<br>電子郵件：<a href="mailto:swapnal@ms61.hinet.net">swapnal@ms61.hinet.net</a><br>官方網站：<a href="https://www.fischer-international.com/en" target="_blank" rel="noopener">https://www.fischer-international.com/en</a><br>fischer 外牆與錨固系統專業服務</p>
         </div>
         <form onsubmit="event.preventDefault(); alert('此為網站展示版。正式上線後可串接 Email、LINE 或 CRM。');">
           <input required placeholder="姓名 / 公司">
