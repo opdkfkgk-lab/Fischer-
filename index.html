@@ -453,18 +453,22 @@
           <p>留下建案資訊，我們可依石材尺寸、外牆系統、樓高與基材條件協助初步評估。</p>
           <p><span class="agency-label">fischer 外牆總代理</span><br><strong>富華成股份有限公司</strong><br>電話：(02)2773-5110<br>傳真：(02)2773-5339<br>地址：10685 台北市大安路一段84巷7號<br>電子郵件：<a href="mailto:swapnal@ms61.hinet.net">swapnal@ms61.hinet.net</a><br>官方網站：<a href="https://www.fischer-international.com/en" target="_blank" rel="noopener">https://www.fischer-international.com/en</a><br>fischer 外牆與錨固系統專業服務</p>
         </div>
-        <form onsubmit="event.preventDefault(); alert('此為網站展示版。正式上線後可串接 Email、LINE 或 CRM。');">
-          <input required placeholder="姓名 / 公司">
-          <input placeholder="聯絡電話">
-          <input type="email" placeholder="Email">
-          <select>
-            <option>請選擇需求類型</option>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- 帶入你的 Web3Forms Key 與信件主旨 -->
+          <input type="hidden" name="access_key" value="13550e48-ef14-4a46-b61c-8b56a5fddc59">
+          <input type="hidden" name="subject" value="【fischer 網站詢價通知】收到新的客戶詢價單">
+          
+          <input required name="name" placeholder="姓名 / 公司">
+          <input required name="phone" placeholder="聯絡電話">
+          <input type="email" required name="email" placeholder="Email">
+          <select name="request_type" required>
+            <option value="">請選擇需求類型</option>
             <option>石材背擴孔系統</option>
             <option>機械式錨栓</option>
             <option>化學錨栓</option>
             <option>工程技術諮詢</option>
           </select>
-          <textarea placeholder="建案名稱、石材尺寸、樓高或其他需求"></textarea>
+          <textarea required name="message" placeholder="建案名稱、石材尺寸、樓高或其他需求"></textarea>
           <button class="btn btn-primary full" type="submit">送出詢問</button>
         </form>
       </div>
